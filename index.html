@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>JavaScript ES6 and JQeury</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="col-md-8">
+        <h1> JavaScript ES6</h1>
+        <hr>
+      </div>
+      <div class="col-md-6">
+        <div class="panel panel-success">
+          <div class="panel-heading">Foreach Helper</div>
+          <div class="panel-body">
+            <p>We have an array with products, and each product has a name and a price.</p>
+            <p>var products = [ {name:'Iphone',price:200}, {name:'Motorola',price:70}, {name:'Samsung',price:150}, {name:'Sony',price:98}, {name:'Windows pone',price:10}];</p>
+            <p>We want to loop the array and print a DIV with the name and price, and if it's less than $100 we want to show an ON SALE.</p>
+            <a href="ForeachHelper.html" target="_blank" class="btn btn-primary">Click here for solution</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="panel panel-success">
+          <div class="panel-heading">Map Helper</div>
+          <div class="panel-body">
+            <p>We have an array of paintings.</p>
+            <p>const paintings = [ {painting:'Mona lisa',width:200,height:200}, {painting:'The scream',width:400,height:600},{painting:'The last supper',width:600,width:700} ]</p>
+            <p>We need to loop the array and create a new array with messages like  <strong>“The Mona lisa is 200 x 200”</strong></p>
+            <a href="MapHelper.html" target="_blank" class="btn btn-primary">Click here for solution</a>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /.container -->
+
+    <!-- JavaScript
+    ================================================== -->
+    <!-- JQeury -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+
+  </body>
+</html>

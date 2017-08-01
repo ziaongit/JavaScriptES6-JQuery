@@ -14,4 +14,29 @@ const cars = [
     {brand:"Valvo",price:800,available:2,type:"Truk"}
 ];
 
+
+
+document.querySelector('.search').addEventListener('click', function(){
+    var price = parseInt(document.querySelector('#price').value);
+    var type = document.querySelector('#type').value;
+    
+    let result = getResult(price, type);
+
+    if(result){
+        console.log('Car: '+result.type+'\nPrice: '+result.price);
+    }else {
+        console.log('No car found');
+    }
+
+});
+
+function getResult(price, type) {
+
+    return cars.find(function(car){
+        return car.price < price 
+        && car.available > 0
+        && car.type ===type
+    });
+}
+
 // Find Helper End
